@@ -1,11 +1,14 @@
 
 workflows:
   foldfleet-ios:
-    name: Foldfleet iOS Build
+    name: Foldfleet iOS App Store Build
     max_build_duration: 120
     instance_type: mac_mini_m2
 
     environment:
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.foldfleet.game
       xcode: 27.1
 
     scripts:
@@ -13,17 +16,16 @@ workflows:
         script: |
           xcodebuild -version
 
-      - name: Build Foldfleet for iOS
+      - name: Set up iOS code signing
         script: |
-          xcodebuild \
-            -project "Foldfleet.xcodeproj" \
-            -scheme "Foldfleet" \
-            -configuration Debug \
-            -destination 'generic/platform=iOS' \
-            -derivedDataPath build/DerivedData \
-            CODE_SIGNING_ALLOWED=NO \
-            build
+          xcode-project use-profiles
+
+      - name: Build signed IPA
+        script: |
+          xcode-project build-ipa \
+            --project "$CM_BUILD_DIR/Foldfleet.xcodeproj" \
+            --scheme "Foldfleet"
 
     artifacts:
-      - build/DerivedData/Build/Products/Debug-iphoneos/*.app
+      - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
