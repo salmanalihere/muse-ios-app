@@ -1,0 +1,29 @@
+
+workflows:
+  foldfleet-ios:
+    name: Foldfleet iOS Build
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+
+    environment:
+      xcode: latest
+
+    scripts:
+      - name: Check Xcode version
+        script: |
+          xcodebuild -version
+
+      - name: Build Foldfleet for iOS
+        script: |
+          xcodebuild \
+            -project "Foldfleet.xcodeproj" \
+            -scheme "Foldfleet" \
+            -configuration Debug \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+
+    artifacts:
+      - build/DerivedData/Build/Products/Debug-iphoneos/*.app
+      - /tmp/xcodebuild_logs/*.log
