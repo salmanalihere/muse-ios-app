@@ -1,0 +1,82 @@
+# Foldfleet — first Xcode build & test on GitHub Actions.
+#
+# Manual run only (workflow_dispatch): nothing runs on push, so no
+# surprise macOS minutes. Run it from the repo's Actions tab.
+#
+# Update 27 Oct 2026 — the Xcode 27.1 question is now answered, with a
+# caveat. The `xcode-27` image (revision 20261012.0260.1, macOS 27.0.1)
+# defaults to Xcode 27.0 (27A266a), BUT it also carries Xcode 27.1
+# (build 27A9275 — the same build as the released Xcode 27.1) at
+# /Applications/Xcode_27.1_Release_Candidate.app, aliased as
+# /Applications/Xcode_27.1.app. So this workflow now EXPLICITLY selects
+# 27.1 with `sudo xcode-select` before doing anything else. If that path
+# is gone in a later image revision, the select step fails loudly and
+# nothing else runs — check the log, don't just re-run it.
+#
+# Two more Duo-specific points, from the same research:
+#   * The iOS 27.1 simulator runtime (24A94425) only supports the
+#     iPhone Duo — any other iPhone on 27.1 fails with "Incompatible
+#     device". So the test destination pins OS=27.1, not just the name.
+#   * The iOS 27.1 runtime is a separate download in Xcode 27.1. The
+#     image lists the 27.1 SDK, but its preconfigured simulators are
+#     27.0 ones, so this workflow downloads the iOS platform first.
+#     That step can take several minutes on first run; that is normal.
+#
+# What it does, in order:
+#   1. Selects Xcode 27.1, then prints macOS + Xcode versions. If this
+#      does not show "Xcode 27.1 Build version 27A9275", stop here.
+#   2. Lists schemes, simulator runtimes and device types (check the
+#      iPhone Duo device type and an iOS 27.1 runtime are both there).
+#   3. Downloads the iOS 27.1 platform if needed.
+#   4. Runs `xcodebuild test` on the iPhone Duo simulator, OS 27.1.
+#
+# If the select step fails or no 27.1 runtime appears, use a cloud Mac
+# with Xcode 27.1 instead — see README "Mac-only steps".
+# Signing is disabled for this test build only (simulator builds don't
+# need it); release signing is a separate step on a Mac.
+#
+# Setup (once, on Windows): create a GitHub repo, push this whole
+# Foldfleet folder (including Foldfleet.xcodeproj/xcshareddata and this
+# .github folder), then Actions -> "Foldfleet Xcode build" -> Run workflow.
+
+name: Foldfleet Xcode build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: xcode-27
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Select Xcode 27.1 (not the 27.0 default)
+        run: |
+          sudo xcode-select -s /Applications/Xcode_27.1.app
+          xcodebuild -version
+          xcode-select -p
+
+      - name: Show toolchain versions (the decisive check)
+        run: |
+          sw_vers
+          xcodebuild -version
+
+      - name: List schemes, runtimes and simulators
+        run: |
+          xcodebuild -list -project Foldfleet.xcodeproj
+          xcrun simctl list runtimes
+          xcrun simctl list devicetypes | grep -i duo
+          xcrun simctl list devices available | head -40
+
+      - name: Download iOS 27.1 simulator platform
+        run: |
+          xcodebuild -downloadPlatform iOS
+
+      - name: Build and test on iPhone Duo simulator
+        run: |
+          xcodebuild test \
+            -project Foldfleet.xcodeproj \
+            -scheme Foldfleet \
+            -destination 'platform=iOS Simulator,OS=27.1,name=iPhone Duo' \
+            CODE_SIGNING_ALLOWED=NO

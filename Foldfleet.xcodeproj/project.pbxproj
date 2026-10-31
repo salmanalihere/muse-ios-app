@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05A8C957BCB54EACB4B872BD /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E21495FB94477689263AA1 /* PaywallView.swift */; };
+		0A58F2A6F29850CFA9F340A1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55744399E135BD18920D898 /* Persistence.swift */; };
+		0E98E0A617EE50FB8173D9E1 /* AIPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6846D22562555C9BD735F5 /* AIPlayer.swift */; };
+		0F22EB004BC85BE2867BD443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7B20829BBA5440BDEF96AE /* Assets.xcassets */; };
+		32EA36F238C24A849382FF98 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D441967C708422B8D6C5F89 /* StoreManager.swift */; };
+		3FD38A752663566F99323113 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CA1A2092756129C843865 /* GameViewModel.swift */; };
+		4CAB65871317515EB3084A0A /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FB97980D50588FAB542B5C /* PlacementView.swift */; };
+		4F628A5685135D7D86CEFEC3 /* SoundEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2272805DE6A599FAD5AC90A /* SoundEngine.swift */; };
+		6F88AF1E7A5A40E5A7DE0968 /* TrialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874FAB4F06D7459EBB50CD02 /* TrialManager.swift */; };
+		74BBA89727D5580EA76B520A /* SettingsHelpHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97828C9B2DF5D31AAF843A1 /* SettingsHelpHistory.swift */; };
+		9F45E421108E5C5E88A2B36A /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199CB79850454D1B08B6CAD /* BattleView.swift */; };
+		A25C4EC182FD58AABA42E096 /* GameModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D885B4F5C9D551EB8EB3355 /* GameModelTests.swift */; };
+		A275EAA63CF051B0B97AFD2E /* DuoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4672751FBDD5AF8AE2A72BA /* DuoLayout.swift */; };
+		A53028C0F6E25881AE3FDC20 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A679947B0955E18073AA07 /* GameModel.swift */; };
+		ADEC5D31B3455D4D82158974 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D5D0596BF85FA3A7D85C7C /* DesignSystem.swift */; };
+		B2F95AC1D3835AAE9A0E55B0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10B0DD053D5AD19EC8406E /* MenuView.swift */; };
+		C15A6265D14C50DEB6EF2387 /* OceanGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C737AE65A5ED2875D2D4C /* OceanGridView.swift */; };
+		F1C6D5E0A33D4E8DA3E027A6 /* TrialManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93197B217E7D4ADD893A0D69 /* TrialManagerTests.swift */; };
+		FD765FE1146B59E49885AF09 /* AIPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48462A6D6C05A759630EB6B /* AIPlayerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04B6A1C815C15F21B95562DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A400E5D704095A8190503991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DC983A441BF57D18B3B9F29;
+			remoteInfo = Foldfleet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08A6D99299E4563191EEEDDF /* FoldfleetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoldfleetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12FB97980D50588FAB542B5C /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
+		21A99926D258574F8BFD1B16 /* Foldfleet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foldfleet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D441967C708422B8D6C5F89 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		4D885B4F5C9D551EB8EB3355 /* GameModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModelTests.swift; sourceTree = "<group>"; };
+		4F1CA1A2092756129C843865 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		6199CB79850454D1B08B6CAD /* BattleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleView.swift; sourceTree = "<group>"; };
+		7B7B20829BBA5440BDEF96AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		874FAB4F06D7459EBB50CD02 /* TrialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialManager.swift; sourceTree = "<group>"; };
+		893B0638DD42490DB3787415 /* Foldfleet.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Foldfleet.storekit; sourceTree = "<group>"; };
+		93197B217E7D4ADD893A0D69 /* TrialManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialManagerTests.swift; sourceTree = "<group>"; };
+		9C6846D22562555C9BD735F5 /* AIPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPlayer.swift; sourceTree = "<group>"; };
+		B0D5D0596BF85FA3A7D85C7C /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		B2272805DE6A599FAD5AC90A /* SoundEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEngine.swift; sourceTree = "<group>"; };
+		B97828C9B2DF5D31AAF843A1 /* SettingsHelpHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHelpHistory.swift; sourceTree = "<group>"; };
+		C13C737AE65A5ED2875D2D4C /* OceanGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanGridView.swift; sourceTree = "<group>"; };
+		C4672751FBDD5AF8AE2A72BA /* DuoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoLayout.swift; sourceTree = "<group>"; };
+		C55744399E135BD18920D898 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CD10B0DD053D5AD19EC8406E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		D3E21495FB94477689263AA1 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		E1A679947B0955E18073AA07 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		F48462A6D6C05A759630EB6B /* AIPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPlayerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25148304F8325673BF2C8CC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CBFF5BA0CF52D9931B5DB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08404B61B85A59DF81DB3808 /* FoldfleetTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D885B4F5C9D551EB8EB3355 /* GameModelTests.swift */,
+				F48462A6D6C05A759630EB6B /* AIPlayerTests.swift */,
+				93197B217E7D4ADD893A0D69 /* TrialManagerTests.swift */,
+			);
+			path = FoldfleetTests;
+			sourceTree = "<group>";
+		};
+		309B076F653D54449DB4A022 = {
+			isa = PBXGroup;
+			children = (
+				ADE0E1259FE75B12A4062359 /* Foldfleet */,
+				08404B61B85A59DF81DB3808 /* FoldfleetTests */,
+				893B0638DD42490DB3787415 /* Foldfleet.storekit */,
+				FA6656C3D0AF5CEDBEA74E16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADE0E1259FE75B12A4062359 /* Foldfleet */ = {
+			isa = PBXGroup;
+			children = (
+				F74130582A9D5D83BAAAC075 /* Models */,
+				FA8F341B6FC55548939B467B /* Views */,
+				D391BDF6B3AC530AAD74719F /* ViewModels */,
+				7B7B20829BBA5440BDEF96AE /* Assets.xcassets */,
+			);
+			path = Foldfleet;
+			sourceTree = "<group>";
+		};
+		D391BDF6B3AC530AAD74719F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4F1CA1A2092756129C843865 /* GameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F74130582A9D5D83BAAAC075 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1A679947B0955E18073AA07 /* GameModel.swift */,
+				9C6846D22562555C9BD735F5 /* AIPlayer.swift */,
+				C55744399E135BD18920D898 /* Persistence.swift */,
+				874FAB4F06D7459EBB50CD02 /* TrialManager.swift */,
+				2D441967C708422B8D6C5F89 /* StoreManager.swift */,
+				B2272805DE6A599FAD5AC90A /* SoundEngine.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA6656C3D0AF5CEDBEA74E16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21A99926D258574F8BFD1B16 /* Foldfleet.app */,
+				08A6D99299E4563191EEEDDF /* FoldfleetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA8F341B6FC55548939B467B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0D5D0596BF85FA3A7D85C7C /* DesignSystem.swift */,
+				C4672751FBDD5AF8AE2A72BA /* DuoLayout.swift */,
+				C13C737AE65A5ED2875D2D4C /* OceanGridView.swift */,
+				CD10B0DD053D5AD19EC8406E /* MenuView.swift */,
+				12FB97980D50588FAB542B5C /* PlacementView.swift */,
+				6199CB79850454D1B08B6CAD /* BattleView.swift */,
+				D3E21495FB94477689263AA1 /* PaywallView.swift */,
+				B97828C9B2DF5D31AAF843A1 /* SettingsHelpHistory.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DC983A441BF57D18B3B9F29 /* Foldfleet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3725E23C9AD358B7A2E7BC52 /* Build configuration list for PBXNativeTarget "Foldfleet" */;
+			buildPhases = (
+				6F48AA3F547C516A98C3EF6E /* Sources */,
+				25148304F8325673BF2C8CC1 /* Frameworks */,
+				A8D045871BAF50A9B68CD57D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Foldfleet;
+			productName = Foldfleet;
+			productReference = 21A99926D258574F8BFD1B16 /* Foldfleet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFD08F575EF957F485777CD1 /* FoldfleetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA1042C096B95D0699C27450 /* Build configuration list for PBXNativeTarget "FoldfleetTests" */;
+			buildPhases = (
+				75C247A5AA5454E581210392 /* Sources */,
+				93CBFF5BA0CF52D9931B5DB7 /* Frameworks */,
+				3B871BE38F7A5521B7F04C1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				404B41BC499E5A95B30D5FDA /* PBXTargetDependency */,
+			);
+			name = FoldfleetTests;
+			productName = FoldfleetTests;
+			productReference = 08A6D99299E4563191EEEDDF /* FoldfleetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A400E5D704095A8190503991 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					4DC983A441BF57D18B3B9F29 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					CFD08F575EF957F485777CD1 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+				};
+			};
+			buildConfigurationList = 5B94A78109DF523C93998D8D /* Build configuration list for PBXProject "Foldfleet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 309B076F653D54449DB4A022;
+			productRefGroup = FA6656C3D0AF5CEDBEA74E16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DC983A441BF57D18B3B9F29 /* Foldfleet */,
+				CFD08F575EF957F485777CD1 /* FoldfleetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B871BE38F7A5521B7F04C1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D045871BAF50A9B68CD57D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F22EB004BC85BE2867BD443 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F48AA3F547C516A98C3EF6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53028C0F6E25881AE3FDC20 /* GameModel.swift in Sources */,
+				0E98E0A617EE50FB8173D9E1 /* AIPlayer.swift in Sources */,
+				0A58F2A6F29850CFA9F340A1 /* Persistence.swift in Sources */,
+				6F88AF1E7A5A40E5A7DE0968 /* TrialManager.swift in Sources */,
+				32EA36F238C24A849382FF98 /* StoreManager.swift in Sources */,
+				4F628A5685135D7D86CEFEC3 /* SoundEngine.swift in Sources */,
+				3FD38A752663566F99323113 /* GameViewModel.swift in Sources */,
+				ADEC5D31B3455D4D82158974 /* DesignSystem.swift in Sources */,
+				A275EAA63CF051B0B97AFD2E /* DuoLayout.swift in Sources */,
+				C15A6265D14C50DEB6EF2387 /* OceanGridView.swift in Sources */,
+				B2F95AC1D3835AAE9A0E55B0 /* MenuView.swift in Sources */,
+				4CAB65871317515EB3084A0A /* PlacementView.swift in Sources */,
+				9F45E421108E5C5E88A2B36A /* BattleView.swift in Sources */,
+				05A8C957BCB54EACB4B872BD /* PaywallView.swift in Sources */,
+				74BBA89727D5580EA76B520A /* SettingsHelpHistory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C247A5AA5454E581210392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25C4EC182FD58AABA42E096 /* GameModelTests.swift in Sources */,
+				FD765FE1146B59E49885AF09 /* AIPlayerTests.swift in Sources */,
+				F1C6D5E0A33D4E8DA3E027A6 /* TrialManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		404B41BC499E5A95B30D5FDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DC983A441BF57D18B3B9F29 /* Foldfleet */;
+			targetProxy = 04B6A1C815C15F21B95562DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22E69C5BAB7C52EEA48D804D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foldfleet.game.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.4;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foldfleet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Foldfleet";
+			};
+			name = Debug;
+		};
+		36D5FA15866A5B91AA20EE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 27.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foldfleet.game;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 6.4;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6D8EA100112A5980BBFEFDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foldfleet.game.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.4;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foldfleet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Foldfleet";
+			};
+			name = Release;
+		};
+		9A8D639F6E79511BB12B6B5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 27.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foldfleet.game;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 6.4;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B1A8B2B2F434572EA475F797 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD45E0F4194A5CAFA2F6606D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3725E23C9AD358B7A2E7BC52 /* Build configuration list for PBXNativeTarget "Foldfleet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36D5FA15866A5B91AA20EE26 /* Debug */,
+				9A8D639F6E79511BB12B6B5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B94A78109DF523C93998D8D /* Build configuration list for PBXProject "Foldfleet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A8B2B2F434572EA475F797 /* Debug */,
+				DD45E0F4194A5CAFA2F6606D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA1042C096B95D0699C27450 /* Build configuration list for PBXNativeTarget "FoldfleetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E69C5BAB7C52EEA48D804D /* Debug */,
+				6D8EA100112A5980BBFEFDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A400E5D704095A8190503991 /* Project object */;
+}
